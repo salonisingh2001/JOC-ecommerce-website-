@@ -22,7 +22,7 @@
 # For more information: https://github.github.com/gh-aw/introduction/overview/
 #
 #
-# gh-aw-metadata: {"schema_version":"v1","frontmatter_hash":"2f7cfbdfd005d98562bc89c7b380698ca116c3b9f3aed9d6916e39f1b5337b4f","compiler_version":"v0.47.2"}
+# gh-aw-metadata: {"schema_version":"v1","frontmatter_hash":"ba287fda2d0fee27e3fd4555af3921476d48a78e7bfda8a05b2197604443e1de","compiler_version":"v0.47.2"}
 
 name: "Repository Health Report Agent"
 "on":
@@ -229,7 +229,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      deployments: read
       issues: read
       pull-requests: read
     env:
