@@ -3,7 +3,7 @@
 </head>
 <body>
 <form action='pro.php' method='post'  enctype="multipart/form-data">
-<table border='1' align='center'  cellspacing='0' cellpadding='10'>
+<table border='2' align='center'  cellspacing='0' cellpadding='10'>
 <caption>Add Product </caption>
 <tr><td>Add-Category</td>
 <td><select name="category">
@@ -15,6 +15,7 @@
               echo "<option value='$row[1]'>$row[1]</option>";
       ?>
         </select>
+
 
     </select>
 </td>
