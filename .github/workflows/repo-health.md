@@ -3,8 +3,6 @@ on:
   push: {}
   workflow_dispatch: {}
 
-# Sirf READ permissions deni hain. 
-# WRITE permission AI ko 'safe-outputs' se apne aap mil jayegi.
 permissions:
   contents: read
   issues: read
@@ -14,6 +12,9 @@ permissions:
 safe-outputs:
   create-issue:
     title-prefix: "[AI-Report] "
+
+with:
+  model: "gpt-4o"
 
 engine: copilot
 ---
