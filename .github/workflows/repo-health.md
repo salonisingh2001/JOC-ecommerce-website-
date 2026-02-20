@@ -6,8 +6,10 @@ on:
     - cron: '0 9 * * 1-5'
 
 permissions:
-  contents: read
-  issues: read
+  contents: write    # Updated to write for better environment setup
+  issues: write      # Important: AI needs to write the report!
+  pull-requests: read
+  deployments: read
 
 safe-outputs:
   create-issue:
