@@ -1,18 +1,17 @@
 ---
 on:
+  push: {}                # Added curly braces
+  workflow_dispatch: {}   # Added curly braces
   schedule:
     - cron: '0 9 * * 1-5'
-  workflow_dispatch:
 
 permissions:
   contents: read
-  pull-requests: read
   issues: read
 
 safe-outputs:
   create-issue:
     title-prefix: "[AI-Report] "
-    labels: ["repo-health", "automation"]
 
 engine: copilot
 ---
