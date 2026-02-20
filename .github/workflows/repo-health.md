@@ -1,13 +1,13 @@
 ---
 on:
-  push: {}                # Added curly braces
-  workflow_dispatch: {}   # Added curly braces
-  schedule:
-    - cron: '0 9 * * 1-5'
+  push: {}
+  workflow_dispatch: {}
 
+# Sirf READ permissions deni hain. 
+# WRITE permission AI ko 'safe-outputs' se apne aap mil jayegi.
 permissions:
-  contents: write    # Updated to write for better environment setup
-  issues: write      # Important: AI needs to write the report!
+  contents: read
+  issues: read
   pull-requests: read
   deployments: read
 

@@ -22,13 +22,11 @@
 # For more information: https://github.github.com/gh-aw/introduction/overview/
 #
 #
-# gh-aw-metadata: {"schema_version":"v1","frontmatter_hash":"a38e9e9910cbb60f9a4f211c1eb207f507adf2f7f35d7591af8a9c5c6648a4a3","compiler_version":"v0.47.2"}
+# gh-aw-metadata: {"schema_version":"v1","frontmatter_hash":"2f7cfbdfd005d98562bc89c7b380698ca116c3b9f3aed9d6916e39f1b5337b4f","compiler_version":"v0.47.2"}
 
 name: "Repository Health Report Agent"
 "on":
   push: {}
-  schedule:
-  - cron: "0 9 * * 1-5"
   workflow_dispatch: {}
 
 permissions: {}
@@ -231,7 +229,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      deployments: read
       issues: read
+      pull-requests: read
     env:
       DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
       GH_AW_ASSETS_ALLOWED_EXTS: ""
